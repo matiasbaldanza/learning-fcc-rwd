@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>freeCodeCamp Survey Form</title>
+</head>
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form action="" id="survey-form">
+        <label id="name-label">Name
+            <input type="text" name="name" placeholder="Enter your name" required>
+        </label>
+        <label id="email-label">Email
+            <input type="email" name="email" placeholder="Enter your email" required>
+        </label>
+        <label id="number-label">Age <span>(optional)</span>
+            <input type="number" name="age" min="13" max="120" placeholder="Age"> <span>Ages 13 to 120 allowed</span>
+        </label>
+
+        <label id="role-label">Which option best describes your current role?
+            <select name="role" id="dropdown">
+                <option value="role-unspecified">(Select current role)</option>
+                <option value="role-student">Student</option>
+                <option value="role-full-time-job">Full Time Job</option>
+                <option value="role-full-time-student">Full Time Learner</option>
+                <option value="role-not-stated">Prefer not to say</option>
+                <option value="role-other">Other</option>
+            </select>
+        </label>
+
+        <label id="recommend-label">Would you recommend freeCodeCamp to a friend?
+            <input type="radio" name="recommend" id="definitely"> Definitely
+            <input type="radio" name="recommend" id="maybe"> Maybe
+            <input type="radio" name="recommend" id="not-sure"> Not sure
+        </label>
+
+        <label id="favorite-label">What is your favorite feature of freeCodeCamp?
+            <select name="favorite" id="favorite-dropdown">
+                <option value="favorite-unspecified">(Select current role)</option>
+                <option value="favorite-challenges">Challenges</option>
+                <option value="favorite-projects">Projects</option>
+                <option value="favorite-community">Community</option>
+                <option value="favorite-open-source">Open Source</option>
+            </select>
+        </label>
+
+        <label id="improve-label">
+            <input type="checkbox" name="improve-frontend-projects" id="">Front-end Projects
+            <input type="checkbox" name="improve-backend-projects" id="">Back-end Projects
+            <input type="checkbox" name="improve-data-viz" id="">Data Visualization
+            <input type="checkbox" name="improve-challenges" id="">Challenges
+            <input type="checkbox" name="improve-open-source-community" id="">Open Source Community
+            <input type="checkbox" name="improve-gitter-help-rooms" id="">Gitter help rooms
+            <input type="checkbox" name="improve-videos" id="">Videos
+            <input type="checkbox" name="improve-city-meetups" id="">City Meetups
+            <input type="checkbox" name="improve-wiki" id="">Wiki
+            <input type="checkbox" name="improve-forum" id="">Forum
+            <input type="checkbox" name="improve-additional-courses" id="">Additional Courses
+        </label>
+
+        <label id="comments-label">Any comments or suggestions?
+            <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Enter your comment here..."></textarea>
+        </label>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
