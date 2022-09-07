@@ -1,6 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(58, 58, 158);
+    /* background-image: rgba(58, 58, 158, 0.8), url(assets/survey-form-background.jpeg);
+    background-size: cover; */
+    color: #f5f6f7;
+    font-size: 16px;
+}
+
+h1, p {
+    text-align: center;
+    margin: 0 0 8px;
+}
+
+#description {
+    font-style: italic;
+}
+
+form {
+    width: 720px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: rgba(27, 27, 50, 0.8);
+    border-radius: 0.25rem;
+}
+
 label {
     display: block;
-    margin: 0.5rem;
+    margin: 36px 0 0;
+    font-size: 1.2rem;
+}
+
+label:first-of-type {
+    margin-top: 0;
 }
 
 label span {
@@ -8,11 +41,47 @@ label span {
     font-style: italic;
 }
 
-label input {
+input, 
+select,
+textarea {
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    min-height: 3rem;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.75rem;
+    margin-top: 8px;
+}
+
+label input, 
+label select, 
+label textarea {
     width: 100%;
 }
 
-label input[type="radio"] {
-    width: unset;
+label input[type="radio"],
+label input[type="checkbox"] {
+    width: 1rem;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    min-height: unset;
+}
+
+section {
+    margin-top: 36px;
+}
+
+section label {
+    margin: 0 0 8px;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 48px auto 16px;
+    width: 60%;
+    min-width: 120px;
 }
 

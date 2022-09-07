@@ -64,7 +64,7 @@ textarea {
 input[type="radio"],
 input[type="checkbox"]
 {
-    width: unset;
+    display: block;
     margin: 0 0.5em 0 0;
     vertical-align: middle;
 }
