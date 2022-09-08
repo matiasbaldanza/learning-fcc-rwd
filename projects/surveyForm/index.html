@@ -45,6 +45,11 @@
             <label><input type="radio" name="recommend" value="not-sure"> Not sure</label>
         </section>
 
+<!-- TODO: This subsection heading is wrapped in a     
+    <label> and I don't think this is properly semantic.
+    CONTEXT: I'm handling spacing between sections by adding margin-top to form > label elements,
+    so if I don't use labels, it breaks
+-->
         <label id="favorite-label">What is your favorite feature of freeCodeCamp?
             <select name="favorite" id="favorite-dropdown">
                 <option value="favorite-unspecified">(Select current role)</option>
@@ -69,6 +74,12 @@
             <label><input type="checkbox" value="improve-forum">Forum</label>
             <label><input type="checkbox" value="improve-additional-courses">Additional Courses</label>
         </section>
+
+<!-- TODO: This subsection heading is wrapped in a     
+    <label> and I don't think this is properly semantic.
+    CONTEXT: I'm handling spacing between sections by adding margin-top to form > label elements,
+    so if I don't use labels, it breaks
+-->
 
         <label id="comments-label">Any comments or suggestions?
             <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Enter your comment here..."></textarea>
