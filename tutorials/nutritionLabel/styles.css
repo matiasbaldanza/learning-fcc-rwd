@@ -12,11 +12,62 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
-    font-weight: 800;
-    margin: 0;
+/* RESET TEXT STYLES */
+
+p, h1, h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    clear: both;
+}
+
+p {
+    font-size: 0.85rem;
+}
+
+.label-header h1 {
+    margin-top: -8px;
+    margin-bottom: 4px;
     border-bottom: 1px solid black;
     text-align: center;
+    font-size: 1.9rem;
+}
+
+.label h2 {
+    font-size: 0.85rem;
+}
+
+.percentage-daily-value h2 {
+    margin-bottom: 0.25rem;
+}
+
+.percentage-daily-value p {
+    border-bottom: 1px solid black;
+    line-height: 1.75em;
+}
+
+.percentage-daily-value p:first-of-type {
+    border-top: 1px solid black;
+}
+
+.indent {
+    margin-left: 1em;
+}
+
+.footnote p {
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+    text-indent: -10px;
+    margin-left: 12px;
+}
+
+/* 
+    FIXME: for the border-bottom to extend to margins. 
+    This works if the element below is not indented.
+    Will not look as expected if we have several dbl-indent elements.   
+*/
+
+.dbl-indent {
+    padding-left: 2em;  
 }
 
 .label {
@@ -25,3 +76,33 @@ h1 {
     width: 270px;
     margin: 0 auto;
 }
+
+.label-header p {
+    margin-bottom: 0.15rem;
+}
+
+.right {
+    float: right;
+}
+
+.extrabold {
+    font-weight: 800;
+}
+
+.calories {
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+.label hr {
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+.thick-divider {
+    border: 6px solid black;
+}
+
+.medium-divider {
+    border: 3px solid black;
+}
+
