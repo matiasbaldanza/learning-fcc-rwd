@@ -1,20 +1,20 @@
 section {
     background-color: aqua;
     height: 50px;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
 }
 
 .table-wrap {
     background-color: salmon;
-    height: 90%;
+    height: 95%;
     width: 90%;
     margin: 0 auto;
 }
 
 table {
     background-color: yellow;
-    height: 90%;
+    height: 95%;
     content: "asdfasdf";
     width: 90%;
     margin: 0 auto;
